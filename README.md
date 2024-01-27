@@ -42,13 +42,13 @@ ResNet-50 introduces skip connections that enable the gradient to bypass certain
 ## Equation Breakdown
 Given a[l+2]=g(z[l+2]+a[l]), where:
  
-a[l+2] is the output activation of layer l+2.
+.a[l+2] is the output activation of layer l+2.
  
-g is the activation function.
+.g is the activation function.
  
-z[l+2] is the weighted input (before activation) of layer l+2.
+.z[l+2] is the weighted input (before activation) of layer l+2.
  
-a[l] is the output activation of layer l.
+.a[l] is the output activation of layer l.
 
 This equation represents a typical neural network layer with an activation function applied to the sum of the weighted input and the previous layer's activation.
 
