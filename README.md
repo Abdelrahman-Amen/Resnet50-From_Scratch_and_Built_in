@@ -1,4 +1,4 @@
-# ResNet-50 Image Classification 🔗🔗
+# ResNet-50 Image Classification 🔗
 
 ## Introduction
 
