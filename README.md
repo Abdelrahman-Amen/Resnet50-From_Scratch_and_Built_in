@@ -69,9 +69,7 @@ In the context of ResNet-50, the skip connection is mathematically expressed as:
  
 a[l+2]=g(a[l]+z[l+2])
 
-This formulation ensures that even if 
- 
-g(z[l+2]+a[l]) tends to zero gradients, the direct connection 
+This formulation ensures that even if g(z[l+2]+a[l]) tends to zero gradients, the direct connection 
  
 a[l]+z[l+2] provides a clear path for the gradient to flow through the network during backpropagation, helping in the training of deep architectures.
 
