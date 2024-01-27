@@ -10,13 +10,13 @@ ResNet-50 is a part of the Residual Network (ResNet) family and is renowned for 
 
 ResNet-50 is a deep neural network architecture with 50 layers, featuring a unique design that incorporates skip connections or residual connections. These connections play a crucial role in addressing challenges like the vanishing gradient problem during the training of deep neural networks.
 
-## Architecture:
+## Architecture
 ![0_tH9evuOFqk8F41FG](https://github.com/Abdelrahman-Amen/Resnet50-From_Scratch_and_Built_in/assets/103226865/a03898e9-0b3a-42c8-bbd0-2d76e34e457c)
 
 
 ![Screenshot-from-2020-03-20-15-49-54](https://github.com/Abdelrahman-Amen/Resnet50-From_Scratch_and_Built_in/assets/103226865/2eb7c4b0-5306-4f36-933c-862aa6e6651a)
 
-## Skip Connection (shortcut connection):
+## Skip Connection (shortcut connection)
 
 The term "skip connection" or "shortcut connection" is often used to describe the direct connection between input and output in a residual block. In ResNet-50, these connections allow the gradient to flow more directly through the network during backpropagation, helping to mitigate the vanishing gradient problem.
 
@@ -39,7 +39,7 @@ In traditional deep neural networks, the vanishing gradient problem can impede e
 ResNet-50 introduces skip connections that enable the gradient to bypass certain layers, mitigating the vanishing gradient problem. These skip connections ensure that information from earlier layers can flow directly to later layers, facilitating the training of very deep networks.
 
 
-## Equation Breakdown:
+## Equation Breakdown
 Given a[l+2]=g(z[l+2]+a[l]), where:
  
 a[l+2] is the output activation of layer l+2.
@@ -52,7 +52,7 @@ a[l] is the output activation of layer l.
 
 This equation represents a typical neural network layer with an activation function applied to the sum of the weighted input and the previous layer's activation.
 
-## Vanishing Gradient Concern:
+## Vanishing Gradient Concern
 
 In deep neural networks, during backpropagation, gradients can become very small as they are multiplied through the
 
@@ -62,13 +62,13 @@ effectively learn and update the weights, especially in deeper layers.
 
 If g(z[l+2]+a[l]) leads to small gradients, a[l+2] may become indistinguishable from a[l], resulting in a network that struggles to learn meaningful representations in the deeper layers.
 
-## ResNet-50 Solution:
+## ResNet-50 Solution
 ResNet-50 introduces skip connections or residual connections, which are expressed as 
  
 a[l+2]=g(a[l]+z[l+2]). This design allows the gradient to bypass the convolutional layers, mitigating the vanishing gradient problem. The skip connection ensures that information from earlier layers can flow directly to later layers, facilitating the training of very deep networks.
 
 
-## ResNet-50 Equation:
+## ResNet-50 Equation
 In the context of ResNet-50, the skip connection is mathematically expressed as:
  
 a[l+2]=g(a[l]+z[l+2])
