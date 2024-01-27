@@ -54,11 +54,7 @@ This equation represents a typical neural network layer with an activation funct
 
 ## Vanishing Gradient Concern
 
-In deep neural networks, during backpropagation, gradients can become very small as they are multiplied through the
-
-layers. This can lead to the vanishing gradient problem, where the gradients become too small for the network to 
-
-effectively learn and update the weights, especially in deeper layers.
+In deep neural networks, during backpropagation, gradients can become very small as they are multiplied through the layers. This can lead to the vanishing gradient problem, where the gradients become too small for the network to effectively learn and update the weights, especially in deeper layers.
 
 If g(z[l+2]+a[l]) leads to small gradients, a[l+2] may become indistinguishable from a[l], resulting in a network that struggles to learn meaningful representations in the deeper layers.
 
@@ -89,9 +85,7 @@ ResNet-50 stands as a testament to the advancements in deep neural network archi
 
 The skip connections in ResNet-50 enable efficient learning of intricate features, ensuring that information from earlier layers can directly influence deeper layers. This not only mitigates the vanishing gradient problem but also contributes to the model's ability to recognize complex patterns in diverse images.
 
-As you explore and utilize this ResNet-50 implementation, harness the power of deep learning to unlock new possibilities in image classification. Feel free to contribute, experiment, and adapt ResNet-50 to suit the specific needs of your projects.
-
-
+As you explore and utilize this ResNet-50 implementation, harness the power of deep learning to unlock new possibilities in image classification. 
 
 
 
